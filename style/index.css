@@ -126,8 +126,22 @@ button {
   margin-top: 10px;
 }
 
-@font-face {
-    font-family: 'Inter';
-    src:
-        url('https://fonts.googleapis.com/css?family=Inter'),
+
+@media screen and (max-width: 935px){
+    #section01{
+        display: none;
+    }
+    #section02 {
+        display: flex;
+        width: 100%;
+        padding: 0;
+    }
+
+    button{
+        font
+    }
+    .input, .label{
+        font-size: 3vw;
+    }
 }
+
