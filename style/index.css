@@ -1,0 +1,133 @@
+body {
+    display: flex;
+    margin: 0;
+    height: 110vh; /* Agora o body ocupa toda a altura da tela */
+    background-color: #0d0c0c;
+}
+
+#section01 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 55%;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f060c;
+
+}
+.texts1{
+
+    writing-mode: vertical-rl; 
+    text-orientation: upright;   
+    margin: 0;                           
+    color:#381125;
+    font-family: Inter;
+
+}
+#logodiv {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding-top: auto;
+}
+
+img{
+    height: auto;
+    width: 10vh;
+    margin-right: 2vh;
+}
+
+#h3sec1 {
+    margin: 0;
+    font-size: 2.5vh;
+}
+
+#h1sec1 {
+    margin: 0;
+    font-size: 4vh;
+
+}
+
+.textdivs1{
+    color: white;
+    font-family: Inter;
+    font-variant:normal;
+}
+
+
+#section02{
+    display: flex;
+    height: 100%;
+    width: 45%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d0c0c;
+}
+
+
+#divsec2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: 70%;
+
+    padding-top: 10%;
+}
+
+.label{
+    display: flex;
+    justify-self: left;
+    padding-top: 10%;
+    width: 81%;
+    color: white;
+    font-family: Inter;
+    font-size: 1.7vh;
+    
+}
+
+.input {
+    display: flex;
+    justify-items: left;
+    width: 80%;
+    background: none;
+    border: none;
+    padding-bottom: 3.5%;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding-top: 6%;
+    color: rgb(255, 255, 255);
+    font-size: 1.5vh;
+    outline: none;
+
+}
+
+.input::placeholder {
+  color: rgb(85, 85, 85);
+  text-align: center;
+}
+
+.error-msg {
+  color: rgb(190, 30, 30);
+  padding-top: 7%;
+  font-size: 1.5vh;
+  text-align: center;
+}
+
+button {
+    padding-top: 15%;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2vh;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src:
+        url('https://fonts.googleapis.com/css?family=Inter'),
+}
