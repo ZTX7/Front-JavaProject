@@ -1,7 +1,8 @@
 body {
     display: flex;
     margin: 0;
-    height: 110vh; /* Agora o body ocupa toda a altura da tela */
+    height: 100vh; /* Agora o body ocupa toda a altura da tela */
+    width: 100%;
     background-color: #0d0c0c;
 }
 
@@ -29,8 +30,9 @@ body {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    padding-top: auto;
+    height: 10%;
+    width: 80%;
+
 }
 
 img{
@@ -46,7 +48,7 @@ img{
 
 #h1sec1 {
     margin: 0;
-    font-size: 4vh;
+    font-size: 1.8rem;
 
 }
 
@@ -60,7 +62,7 @@ img{
 #section02{
     display: flex;
     height: 100%;
-    width: 45%;
+    width: 50%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -73,9 +75,8 @@ img{
     flex-direction: column;
     align-items: center;
     height: auto;
-    width: 70%;
-
-    padding-top: 10%;
+    width: 50%;
+    padding-top: 7vh;
 }
 
 .label{
@@ -117,7 +118,7 @@ img{
 }
 
 button {
-    padding-top: 15%;
+    padding-top: 8vh;
   background: none;
   border: none;
   color: white;
@@ -126,20 +127,77 @@ button {
   margin-top: 10px;
 }
 
+#register{
+    color: white;
+    margin-top: 10%;
+    font-size: 1.5vh;
+    font-family: Inter;
+}
 
-@media screen and (max-width: 935px){
+a{
+    color:aliceblue;
+}
+
+@media screen and (max-width: 900px){
+
+    body{
+        height: 150vw;
+    }
     #section01{
         display: none;
     }
     #section02 {
         display: flex;
+        flex-direction: column;
+        height:auto;
         width: 100%;
         padding: 0;
+
+    }
+
+    #logodiv {
+        height: 20vw;
+        width: 80%;
+
+    }
+
+    img{
+        height: auto;
+        width: 15vw;
+        margin-right: 3vw;
+    }
+
+    #h3sec1 {
+        margin: 0;
+        font-size: 3.5vw;
+    }
+
+    #h1sec1 {
+        margin: 0;
+        font-size: 6.5vw;
+
+    }
+
+    .error-msg {
+    color: rgb(190, 30, 30);
+    padding-top: 7%;
+    font-size: 3vw;
+    text-align: center;
     }
 
     button{
-        font
+        font-size: 4vw;
     }
+    
+    #register{
+    margin-top: 10%;
+    font-size: 2vw;
+    }
+
+    a {
+        color: aliceblue;
+    }
+
     .input, .label{
         font-size: 3vw;
     }
